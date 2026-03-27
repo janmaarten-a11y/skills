@@ -1,5 +1,8 @@
 # Skills
 
+> [!NOTE]
+> This is a collection of skills collected from legends such as [@mattobee](https://github.com/mattobee/skills) and [@mikemai2awesome](https://github.com/mikemai2awesome/agent-skills#)
+
 Reusable skills for coding agents. I use these across my projects and you can too. Built on the [Agent Skills](https://agentskills.io) open specification, so they work with any agent that supports the spec.
 
 ## Available Skills
@@ -7,7 +10,7 @@ Reusable skills for coding agents. I use these across my projects and you can to
 You can install all skills in one go with:
 
 ```bash
-npx skills add janmaarten-a11y/skills
+npx skills add mattobee/skills
 ```
 
 ### Accessibility
@@ -17,7 +20,7 @@ npx skills add janmaarten-a11y/skills
 Identifies accessibility risks in proposed features, designs, or technical plans before implementation begins. Produces a risk assessment with affected user groups, WCAG criteria, likelihood, cost to fix later, and specific mitigations.
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill predicting-accessibility-risks
+npx skills add mattobee/skills --skill predicting-accessibility-risks
 ```
 
 Example prompts:
@@ -32,7 +35,7 @@ Example prompts:
 Reviews implemented UI code for WCAG Level AA compliance. Covers semantic HTML, keyboard navigation, focus management, ARIA, labels, visual contrast, and forms. For pre-implementation risk assessment, use `predicting-accessibility-risks` instead.
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill reviewing-accessibility
+npx skills add mattobee/skills --skill reviewing-accessibility
 ```
 
 Example prompts:
@@ -47,7 +50,7 @@ Example prompts:
 Writes Playwright accessibility tests using a two-layer strategy: axe-core scans for broad automated coverage, plus targeted Playwright assertions for things axe cannot catch (accessible names, ARIA states, focus management, shadow DOM, multi-theme contrast).
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill writing-accessibility-tests
+npx skills add mattobee/skills --skill writing-accessibility-tests
 ```
 
 Example prompts:
@@ -62,7 +65,7 @@ Example prompts:
 Estimates the effort required to remediate accessibility issues. Takes audit findings, axe-core results, or backlog items and produces T-shirt-sized effort estimates with rationale, dependencies, and quick wins.
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill estimating-accessibility-effort
+npx skills add mattobee/skills --skill estimating-accessibility-effort
 ```
 
 Example prompts:
@@ -77,7 +80,7 @@ Example prompts:
 Prioritises a set of accessibility issues for remediation based on severity, user impact, and effort. Produces a scored, tiered remediation plan with batching recommendations and a concrete fix order.
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill prioritising-accessibility-fixes
+npx skills add mattobee/skills --skill prioritising-accessibility-fixes
 ```
 
 Example prompts:
@@ -92,7 +95,7 @@ Example prompts:
 Fixes accessibility issues in implemented UI code. Takes findings from audits, axe-core scans, or `reviewing-accessibility` and produces code changes, with pattern selection defaults for accessible names, focus management, ARIA, forms, contrast, headings, keyboard interaction, and live regions.
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill fixing-accessibility-issues
+npx skills add mattobee/skills --skill fixing-accessibility-issues
 ```
 
 Example prompts:
@@ -109,7 +112,7 @@ Example prompts:
 Designs, generates, and refines multi-agent coding teams with optimal model-to-role assignments. Produces team reasoning documents and agent instruction files that work across platforms.
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill designing-agent-teams
+npx skills add mattobee/skills --skill designing-agent-teams
 ```
 
 Example prompts:
@@ -124,7 +127,7 @@ Example prompts:
 Suggests prioritised next steps for a project based on git history, GitHub issues/PRs, tracking files, and project docs.
 
 ```bash
-npx skills add janmaarten-a11y/skills --skill suggesting-next-steps
+npx skills add mattobee/skills --skill suggesting-next-steps
 ```
 
 Example prompts:
